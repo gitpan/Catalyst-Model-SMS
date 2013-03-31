@@ -4,7 +4,7 @@
       "Martin Atukunda <matlads@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Dist::Zilla version 4.300032, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -24,7 +24,6 @@
             "Catalyst::Model::Adaptor" : "0",
             "Moose" : "0",
             "SMS::Send" : "0",
-            "perl" : "v5.10.1",
             "strict" : "0"
          }
       },
@@ -46,7 +45,7 @@
          }
       }
    },
-   "release_status" : "testing",
+   "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
          "mailto" : "bug-catalyst-model-sms@rt.cpan.org",
@@ -58,6 +57,6 @@
          "web" : "http://github.com/matlads/Catalyst-Model-SMS"
       }
    },
-   "version" : "0.1"
+   "version" : "0.2"
 }
 

@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-use 5.010001;
+
 
 use ExtUtils::MakeMaker 6.30;
 
@@ -11,7 +11,21 @@ use ExtUtils::MakeMaker 6.30;
 my %WriteMakefileArgs = (
   "ABSTRACT" => "Easy SMS sending from Catalyst Apps.",
   "AUTHOR" => "Martin Atukunda <matlads\@cpan.org>",
-  "BUILD_REQUIRES" => {
+  "BUILD_REQUIRES" => {},
+  "CONFIGURE_REQUIRES" => {
+    "ExtUtils::MakeMaker" => "6.30"
+  },
+  "DISTNAME" => "Catalyst-Model-SMS",
+  "EXE_FILES" => [],
+  "LICENSE" => "perl",
+  "NAME" => "Catalyst::Model::SMS",
+  "PREREQ_PM" => {
+    "Catalyst::Model::Adaptor" => 0,
+    "Moose" => 0,
+    "SMS::Send" => 0,
+    "strict" => 0
+  },
+  "TEST_REQUIRES" => {
     "Catalyst" => 0,
     "Catalyst::Controller" => 0,
     "Catalyst::ScriptRunner" => 0,
@@ -26,25 +40,25 @@ my %WriteMakefileArgs = (
     "ok" => 0,
     "warnings" => 0
   },
-  "CONFIGURE_REQUIRES" => {
-    "ExtUtils::MakeMaker" => "6.30"
-  },
-  "DISTNAME" => "Catalyst-Model-SMS",
-  "EXE_FILES" => [],
-  "LICENSE" => "perl",
-  "NAME" => "Catalyst::Model::SMS",
-  "PREREQ_PM" => {
-    "Catalyst::Model::Adaptor" => 0,
-    "Moose" => 0,
-    "SMS::Send" => 0,
-    "strict" => 0
-  },
-  "VERSION" => "0.1",
+  "VERSION" => "0.2",
   "test" => {
     "TESTS" => "t/*.t t/author/*.t"
   }
 );
 
+
+unless ( eval { ExtUtils::MakeMaker->VERSION(6.63_03) } ) {
+  my $tr = delete $WriteMakefileArgs{TEST_REQUIRES};
+  my $br = $WriteMakefileArgs{BUILD_REQUIRES};
+  for my $mod ( keys %$tr ) {
+    if ( exists $br->{$mod} ) {
+      $br->{$mod} = $tr->{$mod} if $tr->{$mod} > $br->{$mod};
+    }
+    else {
+      $br->{$mod} = $tr->{$mod};
+    }
+  }
+}
 
 unless ( eval { ExtUtils::MakeMaker->VERSION(6.56) } ) {
   my $br = delete $WriteMakefileArgs{BUILD_REQUIRES};

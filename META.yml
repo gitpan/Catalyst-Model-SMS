@@ -19,7 +19,7 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Dist::Zilla version 4.300032, CPAN::Meta::Converter version 2.120921'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -29,9 +29,8 @@ requires:
   Catalyst::Model::Adaptor: 0
   Moose: 0
   SMS::Send: 0
-  perl: v5.10.1
   strict: 0
 resources:
   bugtracker: http://rt.cpan.org/NoAuth/Bugs.html?Dist=Catalyst-Model-SMS
   repository: http://github.com/matlads/Catalyst-Model-SMS.git
-version: 0.1
+version: 0.2
