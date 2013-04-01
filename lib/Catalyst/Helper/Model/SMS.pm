@@ -4,8 +4,6 @@ use strict;
 
 # ABSTRACT: Catalyst Helper for SMS::Send Models
 
-our $VERSION = '0.01';
-
 
 sub mk_compclass {
     my ( $self, $helper ) = @_;
@@ -26,7 +24,7 @@ Catalyst::Helper::Model::SMS - Catalyst Helper for SMS::Send Models
 
 =head1 VERSION
 
-version 0.2
+version 0.2.1
 
 =head1 SYNOPSIS
 

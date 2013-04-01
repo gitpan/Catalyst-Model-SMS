@@ -33,4 +33,4 @@ requires:
 resources:
   bugtracker: http://rt.cpan.org/NoAuth/Bugs.html?Dist=Catalyst-Model-SMS
   repository: http://github.com/matlads/Catalyst-Model-SMS.git
-version: 0.2
+version: 0.2.1

@@ -4,8 +4,6 @@ use SMS::Send;
 extends 'Catalyst::Model::Adaptor';
 
 # ABSTRACT: Easy SMS sending from Catalyst Apps.
-#
-our $VERSION = 0.1;
 
 __PACKAGE__->config( class => 'SMS::Send' );
 
@@ -39,7 +37,7 @@ Catalyst::Model::SMS - Easy SMS sending from Catalyst Apps.
 
 =head1 VERSION
 
-version 0.2
+version 0.2.1
 
 =head1 SYNOPSIS
 
