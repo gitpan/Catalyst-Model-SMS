@@ -15,7 +15,6 @@ sub mk_compclass {
 
 1;
 
-
 =pod
 
 =head1 NAME
@@ -24,7 +23,7 @@ Catalyst::Helper::Model::SMS - Catalyst Helper for SMS::Send Models
 
 =head1 VERSION
 
-version 0.2.1
+version 0.3
 
 =head1 SYNOPSIS
 
@@ -74,7 +73,6 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
 
 __DATA__
 

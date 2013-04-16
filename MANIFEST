@@ -8,6 +8,16 @@ META.yml
 Makefile.PL
 README
 dist.ini
+inc/Module/Install.pm
+inc/Module/Install/AuthorRequires.pm
+inc/Module/Install/AuthorTests.pm
+inc/Module/Install/Base.pm
+inc/Module/Install/Can.pm
+inc/Module/Install/Fetch.pm
+inc/Module/Install/Makefile.pm
+inc/Module/Install/Metadata.pm
+inc/Module/Install/Win32.pm
+inc/Module/Install/WriteAll.pm
 lib/Catalyst/Helper/Model/SMS.pm
 lib/Catalyst/Model/SMS.pm
 t/00-load.t
