@@ -23,7 +23,8 @@ my %WriteMakefileArgs = (
     "Catalyst::Model::Adaptor" => 0,
     "Moose" => 0,
     "SMS::Send" => 0,
-    "strict" => 0
+    "strict" => 0,
+    "warnings" => 0
   },
   "TEST_REQUIRES" => {
     "Catalyst" => 0,
@@ -37,10 +38,9 @@ my %WriteMakefileArgs = (
     "Test::WWW::Mechanize::Catalyst" => 0,
     "base" => 0,
     "namespace::autoclean" => 0,
-    "ok" => 0,
-    "warnings" => 0
+    "ok" => 0
   },
-  "VERSION" => "0.3",
+  "VERSION" => "0.4",
   "test" => {
     "TESTS" => "t/*.t t/author/*.t"
   }

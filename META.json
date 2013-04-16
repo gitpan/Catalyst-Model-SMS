@@ -24,7 +24,8 @@
             "Catalyst::Model::Adaptor" : "0",
             "Moose" : "0",
             "SMS::Send" : "0",
-            "strict" : "0"
+            "strict" : "0",
+            "warnings" : "0"
          }
       },
       "test" : {
@@ -40,8 +41,7 @@
             "Test::WWW::Mechanize::Catalyst" : "0",
             "base" : "0",
             "namespace::autoclean" : "0",
-            "ok" : "0",
-            "warnings" : "0"
+            "ok" : "0"
          }
       }
    },
@@ -57,6 +57,6 @@
          "web" : "http://github.com/matlads/Catalyst-Model-SMS"
       }
    },
-   "version" : "0.3"
+   "version" : "0.4"
 }
 
